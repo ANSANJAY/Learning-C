@@ -1,5 +1,5 @@
 /*
-print all negative elemnets
+count even and odd elements in array
 */
 
 #include "declarations.h"
