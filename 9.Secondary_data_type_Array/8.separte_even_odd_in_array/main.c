@@ -1,0 +1,18 @@
+/*
+program finds ood and even elements of the array.
+odd is stored in one arr and even is stored in another
+*/
+
+#include "declarations.h"
+#include "headers.h"
+
+int main()
+{
+    int *arr;
+    int size;
+    printf("enter the size of array : \n");
+    scanf("%d",&size);
+    arr = (int*)malloc(size*sizeof(int));
+    accept(arr,size);
+    even_odd(arr,size);
+}
