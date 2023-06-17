@@ -9,7 +9,6 @@ int main()
     scanf("%d",&size);
     arr = malloc((size)*sizeof(int));
     accept(arr,size);
-    display(arr,size);
     check_prime(arr,size);
 
 }

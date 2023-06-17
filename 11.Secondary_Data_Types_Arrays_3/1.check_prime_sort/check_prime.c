@@ -5,8 +5,10 @@
 int check_prime(int *arr,int size){
 int num =0,i,k=0,j=0,non_prime=0;;
 int *prime;
-prime = (int *)malloc(size*(sizeof(int)));
+int *sorted_prime;
 
+prime = (int *)malloc(size*(sizeof(int)));
+sorted_prime = (int *)malloc(size*(sizeof(int)));
 for(i=0;i<size;i++)
 {
     num = *(arr+i);
@@ -28,7 +30,9 @@ if(non_prime==0)
      j++;
 }
 }
-display(prime,j);
+
+sorted_prime = sort(prime,j);
+display(sorted_prime,j);
 
     return 0;
 }
